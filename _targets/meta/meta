@@ -1,0 +1,9 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+clean_court_data|stem|6ee67c6225d63c01|c63693b57306d1b8|3e9fea561c5f2428|-1538893193||t19359.7781139957s|a7503e8fabf83b84|2599815|rds|local|vector|||16.276||
+clean_whole_data|function|2fd82e8a590be7fd|||||||||||||||
+court_data|stem|b8756106253cd1f0|f0c78c8250679058|aefc8eb8c191d8aa|403203646||t19359.7233836605s|8942f00d4c0bd5cd|2650878|rds|local|vector|||0.11||
+get_data|function|acd5a0475f4552ae|||||||||||||||
+make_vote_plot|function|0e7019a05088287a|||||||||||||||
+plot_vote|stem|99daa3f9a5f7547d|553422d2ad9e47ee|99d198bb933ca462|-181267062||t19359.8949324087s|5b32f666a556c25c|2659132|rds|local|vector|||0.06||
+plot_vote_save|stem|56097e600ed88d34|0733646ce1b3ca47|e4a583306c5f70bf|692902584|figures/vote.png|t19359.8968789593s|77ff1faa5e199458|32953|file|local|vector|||0.711||
+save_plot|function|018760166715daa7|||||||||||||||
