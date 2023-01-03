@@ -19,7 +19,7 @@ list(
   
   tar_target(
     plot_vote_save,
-    save_plot("figures/vote.png", plot_vote),
+    save_plot("home/figures/vote.png", plot_vote),
     format = "file"
   )
 )
