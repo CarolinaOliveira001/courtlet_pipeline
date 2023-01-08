@@ -22,10 +22,10 @@ If everything went well, you can open the "figures" folder and see one barplot i
 ## Description of this pipeline
 
 This pipeline will clean every column from the court data. The court data comes from the courtlet package. Then it creates a 
-plot named "plot_vote_Roe". This plot is a barplot which shows the number of minority votes vs the number of majority votes.
-The latter plot will be saved in the "figure" folder.
+plot named "plot_vote_Roe". This plot is a barplot which shows the number of minority votes vs the number of majority votes 
+for the case "Roe v. Wade". The latter plot will be saved in the "figures" folder.
 
-This whole pipeline was made for my university R course from Bruno André Rodrigues Coelho. This pipeline can be upgraded any 
+This whole pipeline was made for my university R course from Dr. Bruno André Rodrigues Coelho. This pipeline can be upgraded any 
 time, so always keep an eye on the updates.
 
 -----------------------------------------------------------------
