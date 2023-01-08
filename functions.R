@@ -26,7 +26,7 @@ make_vote_plot <- function(data, court_case_name){
     geom_bar(stat = 'identity', position = "dodge") +
     scale_x_discrete(labels = c("majority vote", "minority vote")) +
     scale_fill_hue(c = 40) +
-    labs(title = paste("Vote count", court_case_name)) +
+    labs(title = paste("Vote count for", court_case_name)) +
     theme(plot.title = element_text(hjust = 0.5),
           axis.title.x = element_blank(),
           legend.position="none")
