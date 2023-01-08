@@ -1,0 +1,9 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+clean_court_data|stem|aa9d2dc1df5f908d|c63693b57306d1b8|6c42c66d58c43783|-1538893193||t19365.4855327154s|be379a414a8f46bc|2635147|rds|local|vector|||20.172||
+clean_whole_data|function|02059a4d71ea5ea0|||||||||||||||
+court_data|stem|b8756106253cd1f0|f0c78c8250679058|aefc8eb8c191d8aa|403203646||t19365.4852898563s|8942f00d4c0bd5cd|2650878|rds|local|vector|||0.095||
+get_data|function|acd5a0475f4552ae|||||||||||||||
+make_vote_plot|function|71fe60dbd74fb0a3|||||||||||||||
+plot_vote_Roe|stem|c60beb862d3e4e1e|553422d2ad9e47ee|4e916be5ec005c00|-882648321||t19365.4866575747s|4a666ff5f0effca2|2694896|rds|local|vector|||0.065||
+plot_vote_save|stem|d6c62911d11bb1d3|c716fd63d5320758|e19ad12f2cd2bb7c|692902584|home/figures/vote.png|t19365.4866633915s|72a3e0338bbcf9a4|37540|file|local|vector|||0.489||
+save_plot|function|018760166715daa7|||||||||||||||

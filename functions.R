@@ -3,7 +3,7 @@ get_data <- function(){
 }
 
 clean_whole_data <- function(data) {
-  df <- data.frame(index = 1:length(data[,1]))
+  df <- data.frame(index = 1:length(data[[1]]))
   
   for (col in c(names(data))){
     clean_col <- courtlet::clean_text(data, col)
@@ -26,7 +26,7 @@ make_vote_plot <- function(data, court_case_name){
     geom_bar(stat = 'identity', position = "dodge") +
     scale_x_discrete(labels = c("majority vote", "minority vote")) +
     scale_fill_hue(c = 40) +
-    labs(title = "Vote count") +
+    labs(title = paste("Vote count", court_case_name)) +
     theme(plot.title = element_text(hjust = 0.5),
           axis.title.x = element_blank(),
           legend.position="none")
