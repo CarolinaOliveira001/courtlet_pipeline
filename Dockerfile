@@ -1,6 +1,6 @@
 FROM carolina30/r421_rap:version1
 
-RUN mkdir /home/figures
+RUN mkdir /home/courtcases
 
 COPY _targets.R /_targets.R
 

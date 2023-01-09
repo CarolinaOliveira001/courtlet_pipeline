@@ -36,3 +36,46 @@ save_plot <- function(save_path, plot){
   ggsave(save_path, plot)
   save_path
 }
+
+save_file <- function(data, nameCase, path){
+  small_data <- data %>% 
+    dplyr::filter(name == nameCase)
+  
+  winner <- toString(small_data$first_party_winner)
+  if (winner == "TRUE"){
+    winner_name <- toString(small_data$first_party)
+  } else {
+    winner_name <- toString(small_data$second_party)
+  }
+  
+  file.create(path)
+  cat("Supreme court cases in USA\n\n",file=path, append=TRUE)
+  cat("Parties involved: \n",file=path,append=TRUE)
+  cat(paste(small_data$first_party, "v.", small_data$second_party),file=path,append=TRUE)
+  
+  cat("\n\n",file=path, append=TRUE)
+  cat("Question: \n",file=path,append=TRUE)
+  cat(small_data$question,file=path,append=TRUE)
+  
+  cat("\n\n",file=path, append=TRUE)
+  cat("Facts: \n",file=path,append=TRUE)
+  cat(small_data$facts,file=path,append=TRUE)
+  
+  cat("\n\n",file=path, append=TRUE)
+  cat("Conclusion: \n",file=path,append=TRUE)
+  cat(small_data$conclusion,file=path,append=TRUE)
+  
+  cat("\n\n",file=path, append=TRUE)
+  cat("Winning party: \n",file=path,append=TRUE)
+  cat(winner_name,file=path,append=TRUE)
+  
+  cat("\n\n",file=path, append=TRUE)
+  cat("Lawyers involved: \n",file=path,append=TRUE)
+  cat(small_data$advocate_name,file=path,append=TRUE)
+  
+  cat("\n\n",file=path, append=TRUE)
+  cat("Judges involved: \n",file=path,append=TRUE)
+  cat(small_data$judges,file=path,append=TRUE)
+  
+}
+

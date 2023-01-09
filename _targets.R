@@ -19,7 +19,14 @@ list(
   
   tar_target(
     plot_vote_save,
-    save_plot("home/figures/vote.png", plot_vote_Roe),
+    save_plot("home/courtcases/vote.png", plot_vote_Roe),
+    format = "file"
+  ),
+  
+  tar_target(
+    save_file_Roe,
+    save_file(clean_court_data, "Roe v. Wade", "home/courtcases/output.txt"),
     format = "file"
   )
+  
 )
