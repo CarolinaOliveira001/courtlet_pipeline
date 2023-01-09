@@ -14,16 +14,17 @@ docker build -t pipe_court .
 
 Step 3: You can now run the pipeline with the following command after changing "/absolute/path/" to the path on your machine:
 
-docker run --rm --name court_container -v /absolute/path/courtlet_pipeline/figures/:/home/figures:rw pipe_court
+docker run --rm --name court_container -v /absolute/path/courtlet_pipeline/courtcases/:/home/courtcases:rw pipe_court
 
-If everything went well, you can open the "figures" folder and see one barplot inside.
+If everything went well, you can open the "courtcases" folder and see one barplot inside and one file.
 
 ---------------------------------------------------
 ## Description of this pipeline
 
 This pipeline will clean every column from the court data. The court data comes from the courtlet package. Then it creates a 
 plot named "plot_vote_Roe". This plot is a barplot which shows the number of minority votes vs the number of majority votes 
-for the case "Roe v. Wade". The latter plot will be saved in the "figures" folder.
+for the case "Roe v. Wade". Finally, it saves a description of the "Roe v. Wade" case in a text file. Both the plot and the
+text file will be saved in the "courtcases" folder.
 
 This whole pipeline was made for my university R course from Dr. Bruno André Rodrigues Coelho. This pipeline can be upgraded any 
 time, so always keep an eye on the updates.
