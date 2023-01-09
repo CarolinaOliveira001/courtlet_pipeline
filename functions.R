@@ -76,6 +76,5 @@ save_file <- function(data, nameCase, path){
   cat("\n\n",file=path, append=TRUE)
   cat("Judges involved: \n",file=path,append=TRUE)
   cat(small_data$judges,file=path,append=TRUE)
-  
 }
 
