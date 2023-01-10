@@ -6,7 +6,7 @@ Step 1: Clone the repository using the following ssh key:
 
 git clone git@github.com:CarolinaOliveira001/courtlet_pipeline.git
 
-Step 2: Open the file which appeared from the previous step. Its name is the name of this pipeline "courtlet_pipeline".
+Step 2: Open the folder which appeared from the previous step. Its name is the name of this pipeline "courtlet_pipeline".
 
 Step 3: Build the image (run this command in the same folder as step 2):
 
