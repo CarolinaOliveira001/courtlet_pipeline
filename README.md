@@ -4,17 +4,24 @@
 
 Step 1: Clone the repository using the following ssh key:
 
+```
 git clone git@github.com:CarolinaOliveira001/courtlet_pipeline.git
+```
 
 Step 2: Open the folder which appeared from the previous step. Its name is the name of this pipeline "courtlet_pipeline".
 
 Step 3: Build the image (run this command in the same folder as step 2):
 
+```
 docker build -t pipe_court .
+```
 
-Step 3: You can now run the pipeline with the following command after changing "/absolute/path/" to the path on your machine:
+Step 3: You can now run the pipeline with the following command while inside the "courtlet_pipeline" folder after changing
+"/absolute/path/" to the path on your machine:
 
-docker run --rm --name court_container -v /absolute/path/courtlet_pipeline/courtcases/:/home/courtcases:rw pipe_court
+```
+docker run --rm --name court_container -v /absolute/path/courtcases/:/home/courtcases:rw pipe_court
+```
 
 If everything went well, you can open the "courtcases" folder and see one barplot inside and one file.
 
